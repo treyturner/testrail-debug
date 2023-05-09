@@ -1,0 +1,16 @@
+{
+  "name": "testrail-debug",  
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
+  },
+  "description": "TypeScript with Node 16 vs. @dlenroc/testrail MRE",  
+  "author": "Trey Turner <treyturner@users.noreply.github.com>",
+  "license": "UNLICENSED",
+  "scripts": {
+    "package-a": "yarn --silent workspace package-a"
+  }
+}

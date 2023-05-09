@@ -1,0 +1,32 @@
+{
+  "extends": "../tsconfig.base.json",
+  "files": [],
+  "include": [],
+  "compilerOptions": {
+    "composite": true,
+    "incremental": true,
+    "noEmitOnError": true,
+    "outDir": "dist",
+    "pretty": true,
+    "noFallthroughCasesInSwitch": true,
+    "allowUnreachableCode": false,
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "preserveConstEnums": true,
+    "strictPropertyInitialization": false,
+    "jsx": "react",
+    "preserveWatchOutput": true,
+    "noUnusedParameters": false,
+    "noUnusedLocals": false,
+    "skipLibCheck": true,
+    "declaration": true,
+
+    // dangerous, on in newer tsconfig.base.json, but turning off here for legacy compat
+    // work towards removing this line
+    "noUncheckedIndexedAccess": false
+  }
+}
