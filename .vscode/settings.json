@@ -1,0 +1,14 @@
+{
+  "npm.packageManager": "yarn",
+  "search.exclude": {
+    "**/.cache-loader/**": true,
+    "**/.git/objects": true,
+    "**/.next/**": true,
+    "**/bower_components": true,
+    "**/dist": true,
+    "**/node_modules": true,
+    "**/yarn.lock": true
+  },
+  "typescript.preferences.importModuleSpecifier": "relative",
+  "typescript.tsdk": "node_modules/typescript/lib"
+}
