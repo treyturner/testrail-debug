@@ -10,6 +10,9 @@
     "go": "ts-node src/index.ts",
     "type-check": "tsc --noEmit"
   },
+  "dependencies": {
+    "tslib": "^2.2.0"
+  },
   "devDependencies": {
     "@dlenroc/testrail": "1.9.0",
     "@types/node": "16.11.20",
