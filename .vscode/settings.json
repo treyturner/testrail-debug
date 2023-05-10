@@ -1,0 +1,5 @@
+{
+  "npm.packageManager": "yarn",
+  "typescript.preferences.importModuleSpecifier": "relative",
+  "typescript.tsdk": "node_modules/typescript/lib"
+}
