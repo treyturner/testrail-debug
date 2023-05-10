@@ -1,25 +1,26 @@
 {
   "name": "testrail-debug",
   "version": "1.0.0",
-  "private": true,
-  "workspaces": {
-    "packages": [
-      "packages/*"
-    ]
-  },
+  "type": "module",
   "description": "TypeScript with Node 16 vs. @dlenroc/testrail MRE",
   "author": "Trey Turner <treyturner@users.noreply.github.com>",
   "license": "MIT",
   "scripts": {
-    "package-a": "yarn --silent workspace package-a"
+    "build": "node --loader ts-node/esm node_modules/.bin/webpack",
+    "go": "ts-node src/index.ts",
+    "type-check": "tsc --noEmit"
   },
   "devDependencies": {
+    "@dlenroc/testrail": "1.9.0",
     "@types/node": "16.11.20",
+    "@types/webpack-node-externals": "3.0.0",
+    "resolve-typescript-plugin": "^1.2.0",
     "ts-loader": "^8.1.0",
     "ts-node": "^10.9.1",
     "tsconfig-paths-webpack-plugin": "^4.0.1",
     "typescript": "4.6.3",
-    "webpack-node-externals": "^3.0.0",
-    "wsrun": "^5.2.4"
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1",
+    "webpack-node-externals": "^3.0.0"
   }
 }
